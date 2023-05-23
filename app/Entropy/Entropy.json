@@ -39,6 +39,7 @@
     "Image1": 48,
     "Label1": 5,
     "Label2": 9,
+    "Label3": 55,
     "NextArrow1": 52,
     "Resource Name_DataCard1": 16,
     "Screen1": 4,
@@ -58,10 +59,10 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/23/2023 06:48:17",
+  "HeaderLastSavedDateTimeUTC": "05/23/2023 06:56:35",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "98768b0a-3f3c-4c58-8457-8d4157cedb73": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/8928da788c57496b9106fcb413513906\""
+    "98768b0a-3f3c-4c58-8457-8d4157cedb73": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2a01746cb8e8491d8e17c9f7e57eac64\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -123,6 +124,7 @@
     "Image1": {},
     "Label1": {},
     "Label2": {},
+    "Label3": {},
     "NextArrow1": {},
     "Resource Name_DataCard1": {},
     "Screen1": {},
@@ -180,6 +182,7 @@
     "Image1": 43,
     "Label1": 0,
     "Label2": 4,
+    "Label3": 0,
     "NextArrow1": 47,
     "Resource Name_DataCard1": 11,
     "Screen1": 0,
@@ -203,7 +206,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.6090321,
+    "AnalysisLoadTime": 0.5498559,
     "ControlCount": {
       "datepicker": 1,
       "form": 1,
@@ -217,7 +220,7 @@
       "text": 6,
       "typedDataCard": 7
     },
-    "DeserializationLoadTime": 6.711543
+    "DeserializationLoadTime": 2.333344
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
