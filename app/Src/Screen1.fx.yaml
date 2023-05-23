@@ -625,3 +625,9 @@ Screen1 As screen:
         Y: =395
         ZIndex: =9
 
+    Label4 As label:
+        Text: ="Hello"
+        X: =533
+        Y: =475
+        ZIndex: =10
+
