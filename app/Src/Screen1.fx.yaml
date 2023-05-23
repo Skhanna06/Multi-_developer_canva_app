@@ -601,7 +601,7 @@ Screen1 As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =200
         X: =925
-        Y: =251
+        Y: =423
         ZIndex: =6
 
     Icon1_1 As icon.Add:
