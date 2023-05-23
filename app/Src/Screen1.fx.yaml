@@ -626,7 +626,7 @@ Screen1 As screen:
         ZIndex: =10
 
     Image2 As image:
-        X: =1021
-        Y: =496
+        X: =1081
+        Y: =435
         ZIndex: =11
 
