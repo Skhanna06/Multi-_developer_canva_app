@@ -1,4 +1,18 @@
 {
+  "2924339d-c5be-42ef-97e9-3a705e5efc9a": {
+    "connectionRef": {
+      "displayName": "Snowflake",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/v-sriyen/SnowflakeIP/1.0.1638.3307/snowflakeip/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_snowflakeip"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Snowflake"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2924339d-c5be-42ef-97e9-3a705e5efc9a"
+  },
   "98768b0a-3f3c-4c58-8457-8d4157cedb73": {
     "connectionRef": {
       "apiTier": "Standard",

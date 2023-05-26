@@ -62,10 +62,11 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/24/2023 06:53:34",
+  "HeaderLastSavedDateTimeUTC": "05/26/2023 05:16:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "98768b0a-3f3c-4c58-8457-8d4157cedb73": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5e9d0674251946ceafe950bfb9caa638\""
+    "2924339d-c5be-42ef-97e9-3a705e5efc9a": "\"/providers/microsoft.powerapps/apis/shared_snowflakeip/connections/8c1c10318ed241efb254436905e3c6be\"",
+    "98768b0a-3f3c-4c58-8457-8d4157cedb73": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/8928da788c57496b9106fcb413513906\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -73,8 +74,9 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "CustomGallerySample": 0,
-    "Resource List": 1
+    "CustomGallerySample": 1,
+    "Resource List": 2,
+    "Snowflake": 0
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
@@ -215,7 +217,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.3532255,
+    "AnalysisLoadTime": 0.3646198,
     "ControlCount": {
       "datepicker": 2,
       "form": 1,
@@ -229,7 +231,7 @@
       "text": 6,
       "typedDataCard": 7
     },
-    "DeserializationLoadTime": 1.8817524
+    "DeserializationLoadTime": 0.8868015
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

@@ -1,0 +1,324 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://india-001.azure-apim.net/apim/snowflakeip" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Snowflake" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Snowflake">Snowflake enables data storage, processing, and analytic solutions that are faster, easier to use, and more flexible than traditional offerings.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://india-001.azure-apim.net/apim/snowflakeip" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ExecuteSqlStatement_param_body_def_statement_def" />
+      <integer name="ExecuteSqlStatement_param_body_def_timeout_def" />
+      <string name="ExecuteSqlStatement_param_body_def_database_def" />
+      <string name="ExecuteSqlStatement_param_body_def_schema_def" />
+      <string name="ExecuteSqlStatement_param_body_def_warehouse_def" />
+      <string name="ExecuteSqlStatement_param_body_def_role_def" />
+      <object name="ExecuteSqlStatement_param_body_def_bindings_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_timezone_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_query_tag_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_binary_output_format_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_date_output_format_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_time_output_format_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_timestamp_output_format_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_timestamp_ltz_output_format_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_timestamp_ntz_output_format_def" />
+      <string name="ExecuteSqlStatement_param_body_def_parameters_def_timestamp_tz_output_format_def" />
+      <integer name="ExecuteSqlStatement_param_body_def_parameters_def_multi_statement_count_def" />
+      <object name="ExecuteSqlStatement_param_body_def_parameters_def">
+        <property name="timezone" type="string" />
+        <property name="query_tag" type="string" />
+        <property name="binary_output_format" type="string" />
+        <property name="date_output_format" type="string" />
+        <property name="time_output_format" type="string" />
+        <property name="timestamp_output_format" type="string" />
+        <property name="timestamp_ltz_output_format" type="string" />
+        <property name="timestamp_ntz_output_format" type="string" />
+        <property name="timestamp_tz_output_format" type="string" />
+        <property name="multi_statement_count" type="integer" />
+      </object>
+      <object name="ExecuteSqlStatement_param_body_def">
+        <property name="statement" type="string" />
+        <property name="timeout" type="integer" />
+        <property name="database" type="string" />
+        <property name="schema" type="string" />
+        <property name="warehouse" type="string" />
+        <property name="role" type="string" />
+        <property name="bindings" typeRef="ExecuteSqlStatement_param_body_def_bindings_def" />
+        <property name="parameters" typeRef="ExecuteSqlStatement_param_body_def_parameters_def" />
+      </object>
+      <string name="ExecuteSqlStatement_responses_200_def_code_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_sqlState_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_message_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_statementHandle_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_createdOn_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_statementStatusUrl_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_format_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def_items_def_name_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def_items_def_type_def" />
+      <boolean name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def_items_def_nullable_def" />
+      <object name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def_items_def">
+        <property name="name" type="string" />
+        <property name="type" type="string" />
+        <property name="nullable" type="boolean" />
+      </object>
+      <array typeRef="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def_items_def" name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def" />
+      <object name="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def">
+        <property name="format" type="string" />
+        <property name="rowType" typeRef="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def_rowType_def" />
+      </object>
+      <integer name="ExecuteSqlStatement_responses_200_def_partitionInfo_def_items_def_rowCount_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_partitionInfo_def_items_def_compressedSize_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_partitionInfo_def_items_def_uncompressedSize_def" />
+      <object name="ExecuteSqlStatement_responses_200_def_partitionInfo_def_items_def">
+        <property name="rowCount" type="integer" />
+        <property name="compressedSize" type="integer" />
+        <property name="uncompressedSize" type="integer" />
+      </object>
+      <array typeRef="ExecuteSqlStatement_responses_200_def_partitionInfo_def_items_def" name="ExecuteSqlStatement_responses_200_def_partitionInfo_def" />
+      <boolean name="ExecuteSqlStatement_responses_200_def_nullable_def" />
+      <string name="ExecuteSqlStatement_responses_200_def_data_def_items_def_items_def" />
+      <array type="string" name="ExecuteSqlStatement_responses_200_def_data_def_items_def" />
+      <array typeRef="ExecuteSqlStatement_responses_200_def_data_def_items_def" name="ExecuteSqlStatement_responses_200_def_data_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_stats_def_numRowsInserted_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_stats_def_numRowsUpdated_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_stats_def_numRowsDeleted_def" />
+      <integer name="ExecuteSqlStatement_responses_200_def_stats_def_numDuplicateRowsUpdated_def" />
+      <object name="ExecuteSqlStatement_responses_200_def_stats_def">
+        <property name="numRowsInserted" type="integer" />
+        <property name="numRowsUpdated" type="integer" />
+        <property name="numRowsDeleted" type="integer" />
+        <property name="numDuplicateRowsUpdated" type="integer" />
+      </object>
+      <object name="ExecuteSqlStatement_responses_200_def">
+        <property name="code" type="string" />
+        <property name="sqlState" type="string" />
+        <property name="message" type="string" />
+        <property name="statementHandle" type="string" />
+        <property name="createdOn" type="integer" />
+        <property name="statementStatusUrl" type="string" />
+        <property name="resultSetMetaData" typeRef="ExecuteSqlStatement_responses_200_def_resultSetMetaData_def" />
+        <property name="partitionInfo" typeRef="ExecuteSqlStatement_responses_200_def_partitionInfo_def" />
+        <property name="nullable" type="boolean" />
+        <property name="data" typeRef="ExecuteSqlStatement_responses_200_def_data_def" />
+        <property name="stats" typeRef="ExecuteSqlStatement_responses_200_def_stats_def" />
+      </object>
+      <string name="ExecuteSqlStatement_responses_202_def_statementHandle_def" />
+      <string name="ExecuteSqlStatement_responses_202_def_code_def" />
+      <string name="ExecuteSqlStatement_responses_202_def_sqlState_def" />
+      <string name="ExecuteSqlStatement_responses_202_def_message_def" />
+      <integer name="ExecuteSqlStatement_responses_202_def_createdOn_def" />
+      <string name="ExecuteSqlStatement_responses_202_def_statementStatusUrl_def" />
+      <object name="ExecuteSqlStatement_responses_202_def">
+        <property name="statementHandle" type="string" />
+        <property name="code" type="string" />
+        <property name="sqlState" type="string" />
+        <property name="message" type="string" />
+        <property name="createdOn" type="integer" />
+        <property name="statementStatusUrl" type="string" />
+      </object>
+      <string name="GetResults_responses_200_def_code_def" />
+      <string name="GetResults_responses_200_def_sqlState_def" />
+      <string name="GetResults_responses_200_def_message_def" />
+      <string name="GetResults_responses_200_def_statementHandle_def" />
+      <integer name="GetResults_responses_200_def_createdOn_def" />
+      <string name="GetResults_responses_200_def_statementStatusUrl_def" />
+      <string name="GetResults_responses_200_def_resultSetMetaData_def_format_def" />
+      <string name="GetResults_responses_200_def_resultSetMetaData_def_rowType_def_items_def_name_def" />
+      <string name="GetResults_responses_200_def_resultSetMetaData_def_rowType_def_items_def_type_def" />
+      <boolean name="GetResults_responses_200_def_resultSetMetaData_def_rowType_def_items_def_nullable_def" />
+      <object name="GetResults_responses_200_def_resultSetMetaData_def_rowType_def_items_def">
+        <property name="name" type="string" />
+        <property name="type" type="string" />
+        <property name="nullable" type="boolean" />
+      </object>
+      <array typeRef="GetResults_responses_200_def_resultSetMetaData_def_rowType_def_items_def" name="GetResults_responses_200_def_resultSetMetaData_def_rowType_def" />
+      <object name="GetResults_responses_200_def_resultSetMetaData_def">
+        <property name="format" type="string" />
+        <property name="rowType" typeRef="GetResults_responses_200_def_resultSetMetaData_def_rowType_def" />
+      </object>
+      <integer name="GetResults_responses_200_def_partitionInfo_def_items_def_rowCount_def" />
+      <integer name="GetResults_responses_200_def_partitionInfo_def_items_def_compressedSize_def" />
+      <integer name="GetResults_responses_200_def_partitionInfo_def_items_def_uncompressedSize_def" />
+      <object name="GetResults_responses_200_def_partitionInfo_def_items_def">
+        <property name="rowCount" type="integer" />
+        <property name="compressedSize" type="integer" />
+        <property name="uncompressedSize" type="integer" />
+      </object>
+      <array typeRef="GetResults_responses_200_def_partitionInfo_def_items_def" name="GetResults_responses_200_def_partitionInfo_def" />
+      <boolean name="GetResults_responses_200_def_nullable_def" />
+      <string name="GetResults_responses_200_def_data_def_items_def_items_def" />
+      <array type="string" name="GetResults_responses_200_def_data_def_items_def" />
+      <array typeRef="GetResults_responses_200_def_data_def_items_def" name="GetResults_responses_200_def_data_def" />
+      <integer name="GetResults_responses_200_def_stats_def_numRowsInserted_def" />
+      <integer name="GetResults_responses_200_def_stats_def_numRowsUpdated_def" />
+      <integer name="GetResults_responses_200_def_stats_def_numRowsDeleted_def" />
+      <integer name="GetResults_responses_200_def_stats_def_numDuplicateRowsUpdated_def" />
+      <object name="GetResults_responses_200_def_stats_def">
+        <property name="numRowsInserted" type="integer" />
+        <property name="numRowsUpdated" type="integer" />
+        <property name="numRowsDeleted" type="integer" />
+        <property name="numDuplicateRowsUpdated" type="integer" />
+      </object>
+      <object name="GetResults_responses_200_def">
+        <property name="code" type="string" />
+        <property name="sqlState" type="string" />
+        <property name="message" type="string" />
+        <property name="statementHandle" type="string" />
+        <property name="createdOn" type="integer" />
+        <property name="statementStatusUrl" type="string" />
+        <property name="resultSetMetaData" typeRef="GetResults_responses_200_def_resultSetMetaData_def" />
+        <property name="partitionInfo" typeRef="GetResults_responses_200_def_partitionInfo_def" />
+        <property name="nullable" type="boolean" />
+        <property name="data" typeRef="GetResults_responses_200_def_data_def" />
+        <property name="stats" typeRef="GetResults_responses_200_def_stats_def" />
+      </object>
+      <string name="GetResults_responses_202_def_statementHandle_def" />
+      <string name="GetResults_responses_202_def_code_def" />
+      <string name="GetResults_responses_202_def_sqlState_def" />
+      <string name="GetResults_responses_202_def_message_def" />
+      <integer name="GetResults_responses_202_def_createdOn_def" />
+      <string name="GetResults_responses_202_def_statementStatusUrl_def" />
+      <object name="GetResults_responses_202_def">
+        <property name="statementHandle" type="string" />
+        <property name="code" type="string" />
+        <property name="sqlState" type="string" />
+        <property name="message" type="string" />
+        <property name="createdOn" type="integer" />
+        <property name="statementStatusUrl" type="string" />
+      </object>
+      <string name="Cancel_responses_200_def_code_def" />
+      <string name="Cancel_responses_200_def_sqlState_def" />
+      <string name="Cancel_responses_200_def_message_def" />
+      <string name="Cancel_responses_200_def_statementHandle_def" />
+      <string name="Cancel_responses_200_def_statementStatusUrl_def" />
+      <object name="Cancel_responses_200_def">
+        <property name="code" type="string" />
+        <property name="sqlState" type="string" />
+        <property name="message" type="string" />
+        <property name="statementHandle" type="string" />
+        <property name="statementStatusUrl" type="string" />
+      </object>
+      <string name="Convert_param_body_def_resultSetMetaData_def" />
+      <string name="Convert_param_body_def_data_def" />
+      <object name="Convert_param_body_def">
+        <property name="resultSetMetaData" type="string" />
+        <property name="data" type="string" />
+      </object>
+      <object name="Convert_responses_200_def_data_def_items_def" />
+      <array typeRef="Convert_responses_200_def_data_def_items_def" name="Convert_responses_200_def_data_def" />
+      <object name="Convert_responses_200_def">
+        <property name="data" typeRef="Convert_responses_200_def_data_def" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://india-001.azure-apim.net/apim/snowflakeip">
+    <resource path="/{connectionId}/">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="ExecuteSqlStatement" actionName="ExecuteSqlStatement" siena:isDeprecated="false">
+        <doc title="Submit SQL Statement for Execution&#xA;Submit a SQL Statement for Execution" />
+        <request>
+          <param style="query" name="requestId" type="xs:string">
+            <doc title="The ID of the Request" />
+          </param>
+          <param style="query" name="async" type="xs:boolean" default="false">
+            <doc title="Indicates if the query should be executed asynchronously" />
+          </param>
+          <param style="query" name="nullable" type="xs:boolean" default="false">
+            <doc title="If nullable is false, null values will be replaced by string" />
+          </param>
+          <param style="header" name="Instance" type="xs:string" required="true">
+            <doc title="The uri of your Snowflake instance (without https://)" />
+          </param>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed="application/json" />
+          <param style="header" name="Accept" type="xs:string" required="true" fixed="application/json" />
+          <representation mediaType="application/json">
+            <param style="plain" name="statement" path="/statement" type="xs:string" />
+            <param style="plain" name="timeout" path="/timeout" type="xs:long" default="60" />
+            <param style="plain" name="database" path="/database" type="xs:string" />
+            <param style="plain" name="schema" path="/schema" type="xs:string" />
+            <param style="plain" name="warehouse" path="/warehouse" type="xs:string" />
+            <param style="plain" name="role" path="/role" type="xs:string" />
+            <param style="plain" name="bindings" path="/bindings" type="service:ExecuteSqlStatement_param_body_def_bindings_def" />
+            <param style="plain" name="parameters" path="/parameters" type="service:ExecuteSqlStatement_param_body_def_parameters_def" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ExecuteSqlStatement_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/{statementHandle}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="statementHandle" type="xs:string" required="true">
+        <doc title="statement handle" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetResults" actionName="GetResults" visibility="important" siena:isDeprecated="false">
+        <doc title="Check the Status and Get Results&#xA;Check the Status of the Execution of a Statement and Get the Results" />
+        <request>
+          <param style="query" name="requestId" type="xs:string">
+            <doc title="Request ID" />
+          </param>
+          <param style="query" name="partition" type="xs:long">
+            <doc title="partition" />
+          </param>
+          <param style="header" name="Instance" type="xs:string" required="true">
+            <doc title="The uri of your Snowflake instance (without https://)" />
+          </param>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed="application/json">
+            <doc title="Content-Type" />
+          </param>
+          <param style="header" name="Accept" type="xs:string" required="true" fixed="application/json">
+            <doc title="Accept" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:GetResults_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/{statementHandle}/cancel">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="statementHandle" type="xs:string" required="true">
+        <doc title="statement handle" />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="Cancel" actionName="Cancel" siena:isDeprecated="false">
+        <doc title="Cancel the Execution of a Statement&#xA;Cancel the Execution of a Statement" />
+        <request>
+          <param style="query" name="requestId" type="xs:string">
+            <doc title="Request ID" />
+          </param>
+          <param style="header" name="Instance" type="xs:string" required="true">
+            <doc title="The uri of your Snowflake instance (without https://)" />
+          </param>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed="application/json">
+            <doc title="Content-Type" />
+          </param>
+          <param style="header" name="Accept" type="xs:string" required="true" fixed="application/json">
+            <doc title="Accept" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Cancel_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/convert">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Convert" actionName="Convert" siena:isDeprecated="false">
+        <doc title="Convert result set rows from array to objects&#xA;Convert result set rows from array to objects" />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="resultSetMetaData" path="/resultSetMetaData" type="xs:string" />
+            <param style="plain" name="data" path="/data" type="xs:string" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Convert_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_snowflakeip" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
